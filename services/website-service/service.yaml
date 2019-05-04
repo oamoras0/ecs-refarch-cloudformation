@@ -49,7 +49,7 @@ Resources:
       TaskDefinition: !Ref TaskDefinition
       LoadBalancers:
         - ContainerName: "website-service"
-          ContainerPort: 8000
+          ContainerPort: 3000
           TargetGroupArn: !Ref TargetGroup
 
   TaskDefinition:
@@ -65,7 +65,7 @@ Resources:
             - Name: PRODUCT_SERVICE_URL
               Value: !Ref ProductServiceUrl
           PortMappings:
-            - ContainerPort: 8000
+            - ContainerPort: 3000
           LogConfiguration:
             LogDriver: awslogs
             Options:
