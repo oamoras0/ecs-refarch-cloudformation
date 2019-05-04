@@ -8,7 +8,7 @@ USER nobody
 
 # Our application runs on port 8001
 # so allow hosts to bind to that port
-EXPOSE 8000
+EXPOSE 3000
 
 # Add our application binary
 ADD app /app
