@@ -69,6 +69,6 @@ func main() {
 	})
 
 	// Lets go...
-	router.Run(":8000")
+	router.Run(":3000")
 
 }
