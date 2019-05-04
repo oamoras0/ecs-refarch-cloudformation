@@ -23,7 +23,7 @@ image: binary
 
 run: image
 	$(call blue, "Running Docker image locally...")
-	docker run -i -t --rm -p 8000:8000 ${name}:${version} 
+	docker run -i -t --rm -p 3000:3000 ${name}:${version} 
 
 publish:  
 	$(call blue, "Publishing Docker image to registry...")
